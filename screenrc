@@ -1,0 +1,12 @@
+vbell off
+startup_message off
+attrcolor b ".I"
+defbce "on"
+shell -$SHELL
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{= ky}%-Lw%{=r}%20>%n %t%{= ky}%+Lw %{= ky}%-=| %{= kw}%M%d %C%a%{-} %{=r} ${USER}@%H "
+#hardstatus string "%{= ky}%-Lw%{=r}%20>%n %t%{= ky}%+Lw %{= ky}%-= %{=r} ${USER}@%H "
+maptimeout 5
+
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'

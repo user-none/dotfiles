@@ -1,32 +1,34 @@
 " Vundle
-" $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-" be iMproved
-set nocompatible
-" required!
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
-" let Vundle manage Vundle. required! 
-Bundle 'gmarik/vundle'
-Bundle 'mileszs/ack.vim'
-Bundle 'vimspell'
-Bundle 'ervandew/supertab'
-Bundle 'godlygeek/tabular'
-Bundle 'scrooloose/nerdtree'
-Bundle 'majutsushi/tagbar'
-" Syntax
-Bundle 'plasticboy/vim-markdown'
-Bundle 'msanders/cocoa.vim'
-Bundle 'elzr/vim-json'
-" Themes 
-Bundle 'jellybeans.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'vimspell'
+Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
 
-" required!
-filetype plugin indent on
+" Syntax
+Plugin 'plasticboy/vim-markdown'
+Plugin 'msanders/cocoa.vim'
+Plugin 'elzr/vim-json'
+" Themes 
+Plugin 'jellybeans.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " My Config
 syntax on

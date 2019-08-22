@@ -1,3 +1,6 @@
+" Setup
+" mkdir ~/.vim/undodir
+
 " Vundle
 " $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -56,6 +59,10 @@ set nobackup
 set scrolloff=4 sidescrolloff=4
 set nu
 set numberwidth=5
+
+" Keep undo history between sessions
+set undofile
+set undodir=~/.vim/undodir
 
 " Show relative line number when editing
 au insertEnter * set nu!

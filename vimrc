@@ -50,6 +50,8 @@ set tw=0 wm=0
 set ts=4
 set sw=4
 set et
+" Don't fold anything
+set nofoldenable
 set encoding=utf-8
 set wildmenu wildmode=list:longest,full
 set backspace=indent,eol,start

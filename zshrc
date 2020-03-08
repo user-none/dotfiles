@@ -1,7 +1,9 @@
 # Vim mode
 export VISUAL=vim
+export EDITOR=vim
 autoload edit-command-line; zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+bindkey -v
 
 # Turn off all beeps
 unsetopt BEEP
@@ -24,7 +26,7 @@ bindkey -M vicmd "^[[B" history-beginning-search-forward
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
-# Show inidicator on the right about the current mode
+# Show indicator on the right about the current mode
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/n}/(main|viins)/i}"
     RPS2=$RPS1
@@ -32,3 +34,8 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# Set Python3 from Homebrew to be the default Python
+typeset -U path
+path=('/usr/local/opt/python/libexec/bin' $path)
+export PATH

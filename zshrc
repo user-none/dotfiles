@@ -8,7 +8,7 @@ bindkey -v
 # Turn off all beeps
 unsetopt BEEP
 
-#enable completion
+# Enable completion
 autoload -Uz compinit
 compinit
 

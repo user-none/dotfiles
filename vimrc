@@ -62,6 +62,9 @@ set scrolloff=4 sidescrolloff=4
 set nu
 set numberwidth=5
 
+" Bold line numbers only
+highlight CursorLineNr cterm=bold term=bold gui=bold
+
 " Keep undo history between sessions
 set undofile
 set undodir=~/.vim/undodir

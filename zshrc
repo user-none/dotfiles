@@ -23,6 +23,9 @@ bindkey "^[[B" history-beginning-search-forward
 bindkey -M vicmd "^[[A" history-beginning-search-backward
 bindkey -M vicmd "^[[B" history-beginning-search-forward
 
+# Make backspace work
+bindkey "^?" backward-delete-char
+
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 

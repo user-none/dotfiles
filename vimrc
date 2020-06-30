@@ -62,9 +62,6 @@ set scrolloff=4 sidescrolloff=4
 set nu
 set numberwidth=5
 
-" Bold line numbers only
-highlight CursorLineNr cterm=bold term=bold gui=bold
-
 " Keep undo history between sessions
 set undofile
 set undodir=~/.vim/undodir
@@ -88,6 +85,9 @@ colorscheme jellybeans
 
 highlight WSError ctermbg=red guibg=red
 match Error /[\x7f-\xff]/
+
+" Bold line numbers only
+highlight CursorLineNr cterm=bold term=bold gui=bold
 
 setlocal spell spelllang=en
 

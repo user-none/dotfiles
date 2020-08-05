@@ -15,7 +15,14 @@ compinit
 # Set prompt
 autoload -Uz promptinit
 promptinit
-prompt redhat
+
+# Pure prompt
+#   npm install --global pure-prompt
+# or
+#   mkdir -p "~/.zsh"
+#   git clone https://github.com/sindresorhus/pure.git "~/.zsh/pure"
+#   add line: fpath+=~/.zsh/pure
+prompt pure
 
 # Complete based on history
 bindkey "^[[A" history-beginning-search-backward
@@ -29,14 +36,9 @@ bindkey "^?" backward-delete-char
 # Make Vi mode transitions faster (KEYTIMEOUT is in hundredths of a second)
 export KEYTIMEOUT=1
 
-# Show indicator on the right about the current mode
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/n}/(main|viins)/i}"
-    RPS2=$RPS1
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
+# Alias some commands
+alias grep='grep --color=auto'
+alias ls='ls -G'
 
 # Set Python3 from Homebrew to be the default Python
 typeset -U path

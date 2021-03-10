@@ -19,9 +19,9 @@ promptinit
 # Pure prompt
 #   npm install --global pure-prompt
 # or
-#   mkdir -p "~/.zsh"
-#   git clone https://github.com/sindresorhus/pure.git "~/.zsh/pure"
-#   add line: fpath+=~/.zsh/pure
+#   mkdir -p $HOME/.zsh
+#   git clone https://github.com/sindresorhus/pure.git $HOME/.zsh/pure
+#   add line (before `autoload -Uz promptinit`): fpath+=$HOME/.zsh/pure
 prompt pure
 
 # Complete based on history

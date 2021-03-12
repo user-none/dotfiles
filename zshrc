@@ -40,7 +40,7 @@ export KEYTIMEOUT=1
 alias grep='grep --color=auto'
 alias ls='ls -G'
 
-# Set Python3 from Homebrew to be the default Python
+# Set Homebrew as part of path
 typeset -U path
-path=('/usr/local/opt/python/libexec/bin' $path)
+path=('/opt/homebrew/bin' $path)
 export PATH

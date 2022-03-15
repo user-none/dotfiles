@@ -23,7 +23,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 
 " Syntax
-Plugin 'plasticboy/vim-markdown'
+Plugin 'preservim/vim-markdown'
 Plugin 'msanders/cocoa.vim'
 Plugin 'elzr/vim-json'
 " Themes 
@@ -93,6 +93,11 @@ setlocal spell spelllang=en
 
 " Tagbar
 "let g:tagbar_left=1
+
+" Markdown
+let g:vim_markdown_toc_autofit=1
+let g:vim_markdown_conceal=0
+let g:vim_markdown_conceal_code_blocks=0
 
 " JSON syntax disable hiding quotes
 let g:vim_json_syntax_conceal=0

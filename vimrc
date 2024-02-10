@@ -50,6 +50,8 @@ set tw=0 wm=0
 set ts=4
 set sw=4
 set et
+" Don't put two spaces after periods
+set nojoinspaces
 " Don't fold anything
 set nofoldenable
 set encoding=utf-8

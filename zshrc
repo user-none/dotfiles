@@ -32,7 +32,7 @@ bindkey -M vicmd "^[[B" history-beginning-search-forward
 
 # Don't record commands with a leading space in history
 setopt HIST_IGNORE_SPACE
-# Don't record calls to `history` or `fc` in the history file
+# Don't record calls to `history` in the history file
 setopt HIST_NO_STORE
 # Don't record these calls in the history file
 HISTORY_IGNORE="(export *)"

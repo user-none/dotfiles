@@ -43,6 +43,9 @@ export KEYTIMEOUT=1
 alias grep='grep --color=auto'
 alias ls='ls -G'
 
+# Hide the go directory
+export GOPATH=$HOME/.go
+
 # Set Homebrew as part of path
 typeset -U path
 path=('/opt/homebrew/bin' $path)
